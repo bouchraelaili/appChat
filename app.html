@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chatApp</title>
+</head>
+<script type="text/javascript">
+	function send(){
+    let task = document.getElementById("input").value;
+    let span = document.createElement("span");
+    let p = document.createElement("p");
+    let txt = document.createTextNode(task);
+
+    p.appendChild(txt);
+    span.appendChild(p);
+
+    document.getElementById("result1").appendChild(span);
+
+
+}
+function send2(){
+    let task = document.getElementById("input").value;
+    let span = document.createElement("span");
+    let p = document.createElement("p");
+    let txt = document.createTextNode(task);
+
+    p.appendChild(txt);
+    span.appendChild(p);
+
+    document.getElementById("result2").appendChild(span);
+
+
+}
+</script>
+<style type="text/css">
+	body{
+		background: linear-gradient(#e66465, #6F1E51);
+	}
+
+	#result1{
+		margin-left: 28%;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+        line-height : 35px;
+
+
+		color: #6F1E51 ;
+		position: absolute;
+	
+
+
+	}
+
+	#result2{
+	line-height : 55px;
+		color: black;
+		float: right;
+		padding-left: 1%;
+		position: absolute;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+
+
+
+	
+	}
+	
+	button{
+		margin-top: 20%;
+
+  background-color: #6F1E51;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 60px; 
+  outline: none;
+
+}
+
+button:hover {
+  background-color:#227093;
+}
+	
+	input{
+		width:400px;
+		height: 50px; 
+		border-color: #ecf0f1;
+		outline: none;
+
+	}
+
+	.content{
+		padding-top: 100%;
+		
+	}
+	.all{
+		width: 600px;
+		height: 900px;
+		background-color: #ecf0f1;
+		border-radius: 8px;
+
+	}
+	.menu{
+		width: 600px;
+		height: 56px;
+		background-color: #B53471;
+
+	}
+	
+</style>
+<body>
+	<center>
+		<div class="all">
+			<div class="menu"> 
+				<img src="ios7-contact_icon-icons.com_50286.png" style="width: 42px;height: 42px;border-radius: 50%;position: absolute;left: 35%;padding-top: 0.3%;">
+				<p style="color: black;position: absolute;right: 58%;font-family: Comic Sans MS, cursive, sans-serif;">Bouchra</p>
+				<p style="color: black;position: absolute;right: 58.2%;font-family: Comic Sans MS, cursive, sans-serif;padding-top: 20px; font-size: 15px; ">Online</p>
+
+				<img src="23-512.png" style="width: 36px;height: 30px; position: absolute;right: 38%;top: 2%;">	
+				<img src="1032078-200.png" style="width: 42px;height: 42px;position: absolute;right: 35%;top:1.4%;">
+				
+			</div>
+
+		<div id="result1"></div>
+		<div id="result2"></div>
+		<div class="content">
+		<input type="text" id="input">
+	    <button id="A" onclick="send()">Send1</button>
+		<button id="B" onclick="send2()">Send2</button>
+	</div>
+		
+	</div>
+	</center>
+	
+
+</body>
+</html>
